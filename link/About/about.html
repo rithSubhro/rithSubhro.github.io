@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="./abstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+
+    <!--for scrolling another try-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Fading in-->
+    <script>
+        window.sr = ScrollReveal({
+          distance: '50px',
+          duration: 1000,
+          easing: 'ease',
+          mobile: true,
+          reset: true,
+          viewFactor: 0.4,
+        });
+    </script>
+
+</head>
+<body>
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border" data-aos="fade-down">
+                hi i'm subhro
+            </span>
+        </div>
+    </div>
+    
+
+    <section class="section section-light">
+       <h2><img src="./d3f67099-4c9f-402c-82b0-2687fd7a4063_200x200.png"></h2>
+       <p>I am a passionate and aspiring Full Stack Software Engineer</p>
+    </section>
+
+    <div class="pimg2">
+        <div class="ptext">
+            <span class="border" data-aos="fade-down">
+                Parallax Effect
+            </span>
+        </div>
+    </div>
+    
+
+    <section class="section section-light">
+       <h2>Status</h2>
+       <p>I'm currently a second year student at <a href="http://jssateb.ac.in/">JSS Academy Of Technical Education</a>
+        pursuing B.E degree in <span>Computer Science and Engineering</span>.I aspire towards a career that will allow me to channel my creativity through crafting 
+        beautiful software and engaging experiences.
+        <p>When I'm not on the computer I enjoy chatting with friends,traveling places and petting dogs.</p>
+    </section>
+
+    <div class="pimg3">
+        <div class="ptext">
+            <span class="border">
+                Hello Again
+            </span>
+        </div>
+    </div>
+    
+
+    <section class="section section-dark">
+       <h2>Principle</h2>
+       <p>I believe in writing clean and scalable code and the language i am comfortable with solving competitive programming problems is C++</p>
+    </section>
+
+
+
+    <script>
+        sr.reveal('.ptext',{
+            origin:'left',
+        });
+    </script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

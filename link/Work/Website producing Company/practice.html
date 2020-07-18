@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>omg2</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="styling.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script>
+            window.sr = ScrollReveal({
+              distance: '50px',
+              duration: 1000,
+              easing: 'ease',
+              mobile: true,
+              reset: true,
+              viewFactor: 0.4,
+            });
+          </script>
+    </head>
+    <body>
+        <!--making navbar with transparency-->
+        <nav role="navigation" class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="weblogo.png" class="logo1"></a>        
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>               
+                </div>
+            </div>
+        </nav>
+        <!--making the big heading with 3 columns with pictures and text-->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Looking to make an Awesome Website</h1>
+            </div>
+        </div>
+
+        <div class="icons">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="money.png" class="bodyimage">
+                        <h2>Price it</h2>
+                        <p>Get in touch for an immediate no obligation quote!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="plan.png" class="bodyimage">
+                        <h2>Plan it</h2>
+                        <p>We will agree on deaadline and commit to it.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="finish.png" class="bodyimage">
+                        <h2>Make it</h2>
+                        <p>We will deliver your website on time with the best quality.</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="container">
+                <a href="" class="btn">Get in touch</a>
+            </div>
+        </div>
+        <!--making a footer-->
+        <div class="footer">
+            <div class="container">
+                <p>&copy;Develop with Subhro</p>
+            </div>
+        </div>
+        <!---->
+    
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <script>
+            sr.reveal('.jumbotron',{
+              origin: 'top',
+          });
+           sr.reveal('.col-md-4',{
+              origin: 'left',
+          });
+            sr.reveal('.contact .btn',{
+              origin: 'bottom',
+          });
+          </script><!--in the body-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </body>
+</html>

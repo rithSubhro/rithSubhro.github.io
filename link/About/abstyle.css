@@ -1,0 +1,68 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+
+.pimg1,.pimg2,.pimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*
+    background-attachment: fixed;-->for parallax
+    background-attachment: scroll;-->for normal
+    */
+    background-attachment: fixed;
+}
+.pimg1{
+    background-image: url(./leo-serrat-T2vkCx_b04E-unsplash.jpg);
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url(./clement-falize-9uNFBOXBEBc-unsplash.jpg);
+    min-height: 50%;
+}
+
+.pimg3{
+    background-image: url(./aerial-architectural-design-architecture-buildings-373912.jpg);
+    min-height: 50%;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    columns: #000000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+}

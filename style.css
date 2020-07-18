@@ -1,0 +1,127 @@
+body{
+    /* background-color:#ffffff; */
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.navbar .navbar-expand-lg .navbar-light {
+    opacity: -1;
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("./ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+  
+    /* Full height */
+    min-height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pimg1{
+    text-align: center;
+    
+}
+
+.head1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 9px;
+    transition: transform .2s;
+}
+
+.head1:hover{
+    background-color: #f7a8a8;
+    color: white;
+    transform: scale(1.1);
+    /* text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 9px; */
+}
+
+
+/* .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    margin: 50px;
+    font-weight: 200;
+} */
+li a:hover {
+    font-size: large;
+    border-bottom: 1px solid greenyellow;
+}
+
+/* .col-md-4 .card{
+    shadow p-3 mb-5 bg-white rounded;
+} */
+.col-md-6 .img-fluid{
+    margin: 10px;
+}
+
+.card{
+    border-radius:1.25rem;
+  
+}
+.card:hover{
+    box-shadow: -7px -5px 10px green;
+}
+
+.tectext{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 17px;
+}
+
+/* .footer {
+    background-color: rgba(26, 32, 126, 0.219);
+    color: grey;
+    font-size: 15px;
+    padding: 10px 0;
+} */
+
+#left{
+    background-image: url(./fabian-grohs-P2SkP_PXhlU-unsplash.jpg);
+    /* Full height */
+    min-height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid h3{
+    text-align: center;
+}
+
+.container-fluid .connections a{
+    display: flex;
+
+}
+
+footer.footer-area{
+    padding:5rem 0;
+    background-image: url("./blue-and-yellow-bokeh-lights-3516751.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social a{
+    margin-left: 30px;
+}
+.social .text-uppercase{
+    color: white;
+    margin-bottom: 45px;
+    letter-spacing: 20px;
+    font-family: 'Abril Fatface', cursive;
+}
+
