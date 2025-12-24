@@ -1,127 +1,218 @@
-body{
-    /* background-color:#ffffff; */
-}
-.container-fluid{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.navbar .navbar-expand-lg .navbar-light {
-    opacity: -1;
+:root {
+  --bg: #020617;
+  --panel: #020617;
+  --card: #020617;
+  --border: #1e293b;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --fleetx-accent: #1d4ed8;
 }
 
-.bg { 
-    /* The image used */
-    background-image: url("./ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
-  
-    /* Full height */
-    min-height: 100%;
+/* ================= RESET ================= */
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= BASE ================= */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #020617, #020617);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;                 /* 🔑 fixes vertical alignment */
+  gap: 60px;
+  padding: 90px 10%;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-text {
+  max-width: 720px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero h2 {
+  color: var(--muted);
+  margin: 12px 0 22px;
+  font-weight: 500;
+}
+
+.hero p {
+  max-width: 680px;
+  color: #cbd5f5;
+  font-size: 1.05rem;
+}
+
+/* ===== HERO IMAGE FIX (IMPORTANT) ===== */
+
+.hero-image {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;                  /* 🔑 prevents stretching */
+  object-position: top;               /* 🔑 best for suit photos */
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background-color: var(--bg);
+  box-shadow:
+    0 0 0 4px rgba(56, 189, 248, 0.12),
+    0 12px 30px rgba(0, 0, 0, 0.65);
+}
+
+/* ================= BUTTONS ================= */
+
+.links {
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 14px;
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #020617;
+  font-weight: 600;
+}
+
+.btn.primary:hover {
+  background: #22b3f3;
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+  padding: 70px 10%;
+}
+
+.section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* ================= SKILLS ================= */
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 26px;
+}
+
+.skills h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.skills p {
+  color: var(--muted);
+}
+
+/* ================= PROJECTS ================= */
+
+.project {
+  background: linear-gradient(180deg, #020617, #020617);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 34px;
+}
+
+.project.fleetx {
+  border-left: 5px solid var(--fleetx-accent);
+}
+
+.project h4 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.project ul {
+  margin: 18px 0 18px 20px;
+}
+
+.project li {
+  margin-bottom: 8px;
+}
+
+.tech {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ================= HIGHLIGHTS ================= */
+
+.highlights {
+  margin-left: 20px;
+}
+
+.highlights li {
+  margin-bottom: 8px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  text-align: center;
+  padding: 35px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
   }
 
-  .pimg1{
-    text-align: center;
-    
+  .hero-image {
+    margin-bottom: 30px;
+  }
+
+  .hero p {
+    margin: 0 auto;
+  }
 }
-
-.head1{
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: 'Abril Fatface', cursive;
-    letter-spacing: 9px;
-    transition: transform .2s;
-}
-
-.head1:hover{
-    background-color: #f7a8a8;
-    color: white;
-    transform: scale(1.1);
-    /* text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: 'Abril Fatface', cursive;
-    letter-spacing: 9px; */
-}
-
-
-/* .navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0,.5);
-    font-family: 'Roboto', sans-serif;
-    font-size: medium;
-    margin: 50px;
-    font-weight: 200;
-} */
-li a:hover {
-    font-size: large;
-    border-bottom: 1px solid greenyellow;
-}
-
-/* .col-md-4 .card{
-    shadow p-3 mb-5 bg-white rounded;
-} */
-.col-md-6 .img-fluid{
-    margin: 10px;
-}
-
-.card{
-    border-radius:1.25rem;
-  
-}
-.card:hover{
-    box-shadow: -7px -5px 10px green;
-}
-
-.tectext{
-    font-family: 'Abril Fatface', cursive;
-    letter-spacing: 17px;
-}
-
-/* .footer {
-    background-color: rgba(26, 32, 126, 0.219);
-    color: grey;
-    font-size: 15px;
-    padding: 10px 0;
-} */
-
-#left{
-    background-image: url(./fabian-grohs-P2SkP_PXhlU-unsplash.jpg);
-    /* Full height */
-    min-height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container-fluid h3{
-    text-align: center;
-}
-
-.container-fluid .connections a{
-    display: flex;
-
-}
-
-footer.footer-area{
-    padding:5rem 0;
-    background-image: url("./blue-and-yellow-bokeh-lights-3516751.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.social a{
-    margin-left: 30px;
-}
-.social .text-uppercase{
-    color: white;
-    margin-bottom: 45px;
-    letter-spacing: 20px;
-    font-family: 'Abril Fatface', cursive;
-}
-
